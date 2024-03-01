@@ -5,7 +5,7 @@
     ],
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/api-docs", "dest": "/api-docs" },
+      { "src": "/api-docs", "dest": "/app.js" },
       { "src": "/(.*)", "dest": "/app.js" }
     ]
   }
