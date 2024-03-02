@@ -27,7 +27,6 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
 
 
-// Your existing routes
 /**
  * @swagger
  * /parse-json:
@@ -40,6 +39,9 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
  *         application/json:
  *           schema:
  *             type: object
+ *             properties:
+ *               myJson:
+ *                 type: string
  *     responses:
  *       200:
  *         description: Parsed JSON data
